@@ -1,0 +1,12 @@
+category,naics,factor,unit,reference,year
+화학제품(기초화학),325180,1.010,kgCO2e/USD,US EPA Supply Chain GHG Emission Factors v1.3,2022
+석유정제품,324110,0.270,kgCO2e/USD,US EPA Supply Chain GHG Emission Factors v1.3,2022
+철강,331110,0.787,kgCO2e/USD,US EPA Supply Chain GHG Emission Factors v1.3,2022
+플라스틱 제품,326111,0.544,kgCO2e/USD,US EPA Supply Chain GHG Emission Factors v1.3,2022
+건설·기계장비,333120,0.228,kgCO2e/USD,US EPA Supply Chain GHG Emission Factors v1.3,2022
+소프트웨어,511210,0.080,kgCO2e/USD,US EPA Supply Chain GHG Emission Factors v1.3,2022
+IT·프로그래밍 서비스,541511,0.084,kgCO2e/USD,US EPA Supply Chain GHG Emission Factors v1.3,2022
+화물 트럭운송,484121,0.595,kgCO2e/USD,US EPA Supply Chain GHG Emission Factors v1.3,2022
+항공 여객운송,481111,0.644,kgCO2e/USD,US EPA Supply Chain GHG Emission Factors v1.3,2022
+음식점·급식,722511,0.194,kgCO2e/USD,US EPA Supply Chain GHG Emission Factors v1.3,2022
+사무·행정지원,561110,0.100,kgCO2e/USD,US EPA Supply Chain GHG Emission Factors v1.3,2022
