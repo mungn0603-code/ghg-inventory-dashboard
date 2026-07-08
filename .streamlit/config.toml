@@ -1,0 +1,7 @@
+# Binance 다크 테마 - 색상 토큰 (DESIGN-binance.md 기준)
+[theme]
+base = "dark"
+primaryColor = "#FCD535"          # Binance Yellow - primary CTA/accent
+backgroundColor = "#0B0E11"        # canvas-dark
+secondaryBackgroundColor = "#1E2329"  # surface-card-dark
+textColor = "#EAECEF"              # body
