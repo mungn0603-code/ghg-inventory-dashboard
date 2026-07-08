@@ -102,3 +102,18 @@ TREE_KG_PER_YEAR = 6.6
 
 def tree_equivalent(co2e_kg_year: float) -> float:
     return co2e_kg_year / TREE_KG_PER_YEAR if TREE_KG_PER_YEAR else 0.0
+
+
+if __name__ == "__main__":
+    inv = Inventory()
+    inv.add(line_from_activity(1, "직접", "도시가스", 5000, "m3", 2.176, "2차", "환경부"))
+    inv.add(line_from_activity(2, "간접", "구매전력", 120000, "kWh", 0.4594, "2차", "GIR"))
+    inv.add(line_from_activity(3, "출장(Cat6)", "항공출장", 50000, "pkm", 0.158, "2차", "DEFRA"))
+    inv.add(line_from_spend("화학제품(기초화학)", 100_000_000, 1.010, "EPA"))
+    print("총 배출:", round(inv.total_kg()/1000, 1), "tCO2e")
+    print("Scope별:", {k: round(v/1000,1) for k,v in inv.by_scope().items()})
+    print("Scope3 카테고리:", {k: round(v/1000,1) for k,v in inv.by_s3_category().items()})
+    print("원단위/인:", round(intensity_per_employee(inv.total_kg(), 50), 2), "tCO2e/인")
+    print("품질 mix:", {k: round(v/1000,1) for k,v in inv.data_quality_mix().items()})
+    assert inv.total_kg() > 0
+    print("ghg_model.py self-test passed.")
