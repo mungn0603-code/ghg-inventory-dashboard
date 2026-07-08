@@ -1,0 +1,10 @@
+scope,s3_category,activity,factor,unit,method,reference,year,data_quality,note
+1,직접,도시가스,2.176,kgCO2e/m3,fuel,환경부/IPCC 2006 GL,2021,2차(계수기반),고정연소 직접배출
+1,직접,경유,2.680,kgCO2e/L,fuel,IPCC/DEFRA 기반,2021,2차(계수기반),이동·고정 연소
+1,직접,휘발유,2.310,kgCO2e/L,fuel,DEFRA 기반,2021,2차(계수기반),이동연소
+1,직접,LPG,1.560,kgCO2e/L,fuel,DEFRA 기반,2021,2차(계수기반),고정·이동 연소
+2,간접,구매전력,0.4594,kgCO2e/kWh,electricity,온실가스종합정보센터(GIR) 전력배출계수,2021,2차(계수기반),위치기반 간접배출
+2,간접,스팀·열,0.0637,kgCO2e/MJ,heat,지역난방 근사,2021,3차(프록시),구매 열/스팀
+3,출장(Cat6),항공출장,0.158,kgCO2e/pkm,distance,DEFRA 기반(단거리),2021,2차(계수기반),여객 항공 인·km
+3,출장(Cat6),철도출장,0.020,kgCO2e/pkm,distance,DEFRA/KTX 근사,2021,3차(프록시),고속철도 인·km
+3,통근(Cat7),차량통근,0.170,kgCO2e/km,distance,국내 승용차 평균,2021,3차(프록시),통근 차량 km
